@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the HTML page -->
+        <title>Calculator</title>
+        <!-- CSS file for styling -->
+        <link rel="stylesheet" href="./calculator.css">
+        <!-- JavaScript file for calculator functionality -->
+        <script defer src="./calculator.js"></script>
+</head>
+<body>
+    <!-- Container for the calculator -->
+    <div class="container">
+        <h1>Calculator</h1>
+        <!-- Form for inputting numbers and selecting operator -->
+        <form id="form">
+            
+            <!-- Row 1: Input fields for Number 1, Operator selection, and Number 2 -->
+            <div class="row1">
+                <!-- Input field for Number 1 -->
+                <input type="number" name="num1" id="num1_input" placeholder="Number 1" step="any" required>
+                <!-- Dropdown menu for selecting the operator -->
+                <select name="operator" id="operator">
+                    <!-- Default option for displaying message -->
+                    <option disabled selected value="invalid-operator">-- Select Operator --</option>
+                    <!-- Options for different arithmetic operations -->
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Subtraction (-)</option>
+                    <option value="*">Multiplication (x)</option>
+                    <option value="/">Division (/)</option>
+                </select>
+                <!-- Input field for Number 2 -->
+                <input type="number" name="num2" id="num2_input" placeholder="Number 2" step="any" required>
+            </div>
+            <br>
+            <!-- Row 2: Button to submit the form and calculate the result -->
+            <div class="row2">
+                <button type="submit">Answer</button>
+            </div>
+        </form> 
+        <!-- Container for displaying the result -->
+        <div class="result-container">
+            <!-- Result -->
+            <h3 class="result" id="result"></h3>
+        </div>
+    </div>
+</body>
+</html>
